@@ -31,10 +31,29 @@ public class Employee {
 	//setter and getter methods for all private properties
 	
 	
-	
+	//2000 loc
 	public double computeAnnualSalary()
 	{
-		return this.empSalary*12;
+		
+		return this.empSalary*12; //jump back to 1001
+	}
+	
+	//function overloading
+	//compile-time polymorphism //static polymorphism
+	//early binding
+	public double computeAnnualSalary(long bonus)
+	{
+		
+		System.out.println("inside computeAnnualSalary(long)");
+		return this.empSalary*12 + bonus;
+	}
+	
+	public double computeAnnualSalary(int incentive)
+	{
+		
+		System.out.println("inside computeAnnualSalary(int");
+		
+		return this.empSalary*12 + incentive;
 	}
 	
 	
@@ -74,15 +93,16 @@ public class Employee {
 		return empId;
 	}
 
-	@Override
-	public String toString()
-	{
-		
-		return "emp details:empid:"+this.empId
-			   +", empname:"+this.empName
-			   +", empsalary:"+this.empSalary
-			   +", empdeptno:"+this.deptno;
-	}
+	
+	  @Override 
+	  public String toString() {
+	  
+	  System.out.println("toString of Employee called..."); 
+	  
+	  return
+	  "emp details:empid:"+this.empId +", empname:"+this.empName
+	  +", empsalary:"+this.empSalary +", empdeptno:"+this.deptno; }
+	 
 	
 	
 
