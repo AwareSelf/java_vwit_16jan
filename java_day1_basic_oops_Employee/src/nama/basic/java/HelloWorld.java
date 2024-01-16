@@ -51,10 +51,11 @@ public class HelloWorld {
 		
 		
 		Employee e = new Employee();
-		System.out.println(e.empId);
-		System.out.println(e.empName);
-		System.out.println(e.empSalary);
-		System.out.println(e.deptno);
+	//	System.out.println(e.empId);
+		System.out.println(e.getEmpId());
+	//	System.out.println(e.empName);
+	//	System.out.println(e.empSalary);
+	//	System.out.println(e.deptno);
 		System.out.println(e);
 		
 		
@@ -70,6 +71,15 @@ public class HelloWorld {
 		System.out.println(e2); //e2.toString()
 		double annsal = e2.computeAnnualSalary();
 		System.out.println(annsal);
+		
+		//e2.empSalary=-100;
+		e2.setEmpSalary(-100);
+		
+		System.out.println(e2.getEmpSalary());
+		
+	    e2.setEmpSalary(1000);
+		
+		System.out.println(e2.getEmpSalary());
 		
 		
 
