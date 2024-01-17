@@ -1,6 +1,6 @@
-package abstracclassinterface;
+package abstracclassinterface1;
 
-public class Square extends Shape {
+public abstract class Square extends Shape {
 	
 
 	
@@ -17,9 +17,6 @@ public class Square extends Shape {
 	}
 
 	
-	  @Override public int calcPm() {
-	  
-	  return this.getSide1() * 4; 
-	  }
+	
 	 
 }

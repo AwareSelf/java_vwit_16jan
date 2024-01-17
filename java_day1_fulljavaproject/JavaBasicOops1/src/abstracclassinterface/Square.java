@@ -16,10 +16,10 @@ public class Square extends Shape {
 	   return this.getSide1() * this.getSide1();
 	}
 
-	@Override
-	public int calcPm()
-	{
-		
-		return this.getSide1() * 4;
-	}
+	
+	  @Override public int calcPm() {
+	  
+	  return this.getSide1() * 4; 
+	  }
+	 
 }
