@@ -1,5 +1,7 @@
 package nama.basic.java;
 
+import java.util.Arrays;
+
 public class ObjectEquality {
 
 	public static void main(String[] args) {
@@ -72,6 +74,37 @@ public class ObjectEquality {
 		
 	//	xno++;
 		
+		
+		Employee[] arr = new Employee[2]; //array of 2 Employee references
+		
+		for(int i=0;i<2;i++)
+		{  arr[i] =  new Employee(i,"Ram"+i,50000.0,10);
+		   System.out.println(arr[i]);
+		}
+		
+		Employee[] arr1 = new Employee[2]; //a
+		
+		for(int i=0;i<2;i++)
+		{  arr1[i] =  new Employee(i,"Ram"+i,50000.0,10);
+		   System.out.println(arr1[i]);
+		}
+		
+     	System.out.println("emp array equality:"+(arr==arr1));
+		
+		System.out.println("emp array equality using equals method:"+(arr.equals(arr1)));
+		
+		System.out.println("emp array equality using Arrays class equals method:"+Arrays.equals(arr, arr1));
+		
+		
+		
+		int[] intarr1 = {1,2,3};
+		int[] intarr2 = {1,2,3};
+		
+		System.out.println("int array equality:"+(intarr1==intarr2));
+		
+		System.out.println("int array equality using equals method:"+(intarr1.equals(intarr2)));
+		
+		System.out.println("int array equality using Arrays class equals method:"+Arrays.equals(intarr1, intarr2));
 		
 		
 		
