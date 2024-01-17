@@ -102,6 +102,11 @@ public class Employee {
 		return empId;
 	}
 
+	@Override
+	public boolean equals(Object obj) //Object obj = e (Employee instance)
+	{
+		return this.empId==((Employee)obj).empId;
+	}
 	
 	  @Override 
 	  public String toString() {
