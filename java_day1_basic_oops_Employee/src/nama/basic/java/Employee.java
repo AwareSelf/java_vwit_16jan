@@ -27,6 +27,15 @@ public class Employee {
 		
 	}
 	
+	//overloaded copy constructor
+	public Employee(Employee ob)
+	{
+		this.empId = ob.empId;
+		this.empName = ob.empName;
+		this.empSalary = ob.empSalary;
+		this.deptno = ob.deptno;
+	}
+	
 	
 	//setter and getter methods for all private properties
 	
