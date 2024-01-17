@@ -1,13 +1,20 @@
 package nama.basic.java;
 
+
+//nama.basic.java.UseEmployee
 public class UseEmployee {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		/*
+		
 		Employee e = new Employee();
+		e.deptno = 5;
+		e.proj="XYZ";
+		/*
 	//	System.out.println(e.empId);
+		
+		
 	    System.out.println(e.getEmpId());
 	//	System.out.println(e.empName);
 	//	System.out.println(e.empSalary);
@@ -60,9 +67,7 @@ public class UseEmployee {
 		//get manager details 
 		func(new Manager(7,"Megha",75000,20,10,5000,50000));
 		func(new WageEmployee());
-		
-		
-		
+	
 
 	}
 	 

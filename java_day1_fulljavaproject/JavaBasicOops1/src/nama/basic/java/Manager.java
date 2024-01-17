@@ -20,6 +20,8 @@ public class Manager extends Employee {
 		this.teamSize = teamSize;
 		this.pettyCash = pettyCash;
 		this.varPay = varPay;
+		
+		
 	}
 
 

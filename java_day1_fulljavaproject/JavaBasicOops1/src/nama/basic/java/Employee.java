@@ -4,10 +4,12 @@ package nama.basic.java;
 //every class in java extends Object
 public class Employee {
 	
-	private int empId;
+    private int empId;
 	private String empName;
 	private double empSalary;
-	private int deptno;
+    int deptno;
+	
+	protected String proj;
 	
 	
 	
@@ -41,7 +43,7 @@ public class Employee {
 	
 	
 	//2000 loc
-	public double computeAnnualSalary()
+    public double computeAnnualSalary()
 	{
 		
 		return this.empSalary*12; //jump back to 1001
