@@ -5,20 +5,44 @@ package interfaceex;
 //declares what features will be provided as part of this contract
 //but it does not implement these features
 //in a way its like a specifications
+
+//abstract,default,static
 public interface Bounceable {
 	
 	//all properties/variables in interface are by default public,static and final
-	int baseBounceFactor = 2;
+	 int baseBounceFactor = 2;
 	
 	//all interface methods are public and abstract
 	void bounce();
 	void setBounceFactor(int bf);
+	
+    static int getBaseBounceFactor()
+	{
+		return baseBounceFactor;
+	}
+    
+    
+    default void display()
+    {
+    	System.out.println("This is bounceable interface, anythings thats bounceable can implement this..");
+    }
+    
+	
+	
 
+}
+
+
+//functional interface which has only 1 abstract method inside it
+//can have default and static methods as well
+ interface Rollable
+{
+	void roll();
 }
 
 //implement - signing contract - implemnts all abstract methods
 //if any single abstract method is inherited but not overriden then class as abstract
-class Ball implements Bounceable
+class Ball implements Bounceable,Rollable
 {
 
 	String ballType;
@@ -41,6 +65,11 @@ class Ball implements Bounceable
 	public void setBounceFactor(int bf) {
 		
 		this.bounceFactor = bf;
+	}
+	@Override
+	public void roll() {
+		System.out.println(ballType+ " Ball is rolling...");
+		
 	}
 	
 }

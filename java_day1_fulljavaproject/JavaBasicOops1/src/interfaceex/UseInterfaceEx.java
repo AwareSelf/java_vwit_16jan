@@ -18,6 +18,9 @@ public class UseInterfaceEx {
 		b.setBounceFactor(20);
 		b.bounce();
 		
+		b.display();
+		System.out.println(Bounceable.getBaseBounceFactor());
+		
 		func(b);
 		func(new Ball("Rubber"));
 		
@@ -31,6 +34,11 @@ public class UseInterfaceEx {
 		b.bounce();
 		b.setBounceFactor(20);
 		b.bounce();
+		
+		
+		b.display();
+		System.out.println(Bounceable.getBaseBounceFactor());
+		
 	}
 
 }
