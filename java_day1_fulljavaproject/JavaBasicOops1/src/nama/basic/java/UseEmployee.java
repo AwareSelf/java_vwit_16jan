@@ -77,6 +77,12 @@ public class UseEmployee {
 	  {
 		  System.out.println(e);
 		  System.out.println(e.computeAnnualSalary());
+		  
+		  if(e instanceof Manager)
+		  {  
+			((Manager)e).delegate();
+		  
+		  }
 	  }
 
 }

@@ -1,0 +1,34 @@
+
+
+28 - students
+
+hobbies - 10 - watch cricket, 20-do shopping, 30-play football, 40-do cooking
+hashCode() -> 10,20,30,40 --> base don ur hobby
+
+equals --> check --> fresher emp id 
+
+
+fresher f1 -> 20
+f2 -> 10
+f3 -> 20
+f4 -> 40
+f5 -> 10
+
+f6 -> 20
+f7 -> 30
+f8 ->30
+f9 ->10
+
+classify all 28 fresher on the basis of hashCode value
+groups - basis of hashCode value
+hashCode -> objects
+ 10  -> f2,f5,f9
+ 20  -> f1,f3
+ 30  -> f7,f8
+ 40  -> f4
+
+
+
+
+
+

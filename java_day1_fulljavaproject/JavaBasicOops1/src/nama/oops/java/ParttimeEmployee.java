@@ -2,6 +2,8 @@ package nama.oops.java;
 
 import nama.basic.java.Employee;
 
+
+//https://www.geeksforgeeks.org/access-modifiers-java/
 public class ParttimeEmployee extends Employee {
 	
 	int partTimeDuration;

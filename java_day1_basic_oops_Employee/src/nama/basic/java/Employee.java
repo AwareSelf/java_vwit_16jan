@@ -104,11 +104,21 @@ public class Employee {
 		return empId;
 	}
 
-	@Override
-	public boolean equals(Object obj) //Object obj = e (Employee instance)
-	{
-		return this.empId==((Employee)obj).empId;
-	}
+	
+	  @Override 
+	  public int hashCode()
+	  {
+		  System.out.println("Employee's hashCode method called...");   
+		  return this.deptno;
+	  }
+	
+	  @Override public boolean equals(Object obj)  //Object obj = e
+	  {
+	       System.out.println("Employee's equals method called..."); 
+	       return   this.empId==((Employee)obj).empId; 
+	   }
+	
+	 
 	
 	  @Override 
 	  public String toString() {
