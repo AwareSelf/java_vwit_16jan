@@ -1,0 +1,34 @@
+
+
+  1) class -> method -> no body -> method as abstract
+  2) class has (even one) abstract method --> entire class as abstract
+  3) if class is abstract --> you can't create object of it
+  4) if class is abstract --> cant create of object of it but
+                           it can still available for inheritance
+
+  5) when a class inherits from abstract class
+     it has to override all abstract method of that class
+     so as to bcm concrete class and create object of it
+
+     even if single abstract method is not overriden then
+     that class will still have abstarct methods in it so
+     you will have to mark whole class as abstract and you
+     cant create an object of it
+
+     soln: create a one more subclass from this abstract class
+      ans override the remaining abstract methods in it so that
+      it will be bcm a concrete class and you can create object of
+      it
+
+
+      Shape -> abstract calcArea,abstract calcPm 
+      Square -> calcArea override, calcPm (inherit abstarct)
+             -> Square class abstract 
+	     --> cant create object of Square class
+
+      Hankerchief extends Square
+            --> calcPm override
+	    --> concrete
+	    --> object --> can call calcArea, calcPm
+
+
