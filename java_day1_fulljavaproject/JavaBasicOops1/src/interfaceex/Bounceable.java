@@ -11,6 +11,7 @@ public interface Bounceable {
 	
 	//all properties/variables in interface are by default public,static and final
 	 int baseBounceFactor = 2;
+	 
 	
 	//all interface methods are public and abstract
 	void bounce();
@@ -38,13 +39,16 @@ public interface Bounceable {
  interface Rollable
 {
 	void roll();
+	default void display()
+    {
+    	System.out.println("This is rollable interface, anythings thats rollable can implement this..");
+    }
 }
 
 //implement - signing contract - implemnts all abstract methods
 //if any single abstract method is inherited but not overriden then class as abstract
 class Ball implements Bounceable,Rollable
 {
-
 	String ballType;
 	int bounceFactor;
 	
@@ -58,9 +62,15 @@ class Ball implements Bounceable,Rollable
 	public void bounce() {
 		
 		System.out.println(ballType+ " Ball is bouncing with bounce factor:"+this.bounceFactor);
-		
 	}
 
+	public void display()
+	{
+		Rollable.super.display();
+		Bounceable.super.display();
+	}
+	
+	
 	@Override
 	public void setBounceFactor(int bf) {
 		

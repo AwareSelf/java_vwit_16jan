@@ -8,6 +8,7 @@ public class UseInterfaceEx {
 		
 		b= new Ball("Season");
 		b.bounce();
+		b.display();
 		
 		b.setBounceFactor(20);
 		b.bounce();
