@@ -1,0 +1,19 @@
+at application level
+data - type,usage,speed 
+1)
+which data structure is suitable
+list,set,tree,stack,queue,graph
+
+2) 
+
+that datastructure - for example List -> multiple implementations -> Array, LinkList
+
+choose which implementation is more suitable based on given scenario/requirement/user story
+--xx---xxx---
+
+you need not write code from  scratch for these data structures and diff implemetations of these
+data structures
+
+bcz java library has different Collection classes in java.util package which will cater
+to your need to diff data structures.
+
