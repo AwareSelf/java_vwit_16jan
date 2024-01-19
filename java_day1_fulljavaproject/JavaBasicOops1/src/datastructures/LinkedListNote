@@ -1,0 +1,42 @@
+
+Linked List in Java: All You Need to Know About it
+
+Working Of Linked List in Java Is As Follows:
+The Hierarchy of Linked Lists Is Explained as Follows:
+There Are Various Types of Linked List. 
+
+They Are:
+Singular Linked List
+Doubly Linked List
+Circular Linked List
+
+
+A linear data structure used to store the elements in contiguous locations is called a 
+Linked List in Java. 
+
+It has addresses and pointers that are used to link the elements, and each element in the 
+linked list consists of two parts, namely the data part and the address part. 
+
+The data part is the value of the element, and the address part consists of the pointers 
+and addresses that are used to link the elements. 
+
+Each element in the list is called a node.
+
+The syntax to define a Linked list in Java is as follows:
+    LinkedList <data_type> linkedlistname = new LinkedList<data_type>();
+    where data_type is the data type of the elements to be stored in the linked list,
+    linkedlistname is the name of the .linked list.
+
+The usage of a linked list allows dynamic insertion and deletion of elements into the linked 
+list. Because of this feature, linked lists are preferred over arrays.
+
+Working Of Linked List in Java Is As Follows:
+A linked list in Java is a dynamic data structure whose size increases as you add the elements 
+and decreases as you remove the elements from the list.
+
+The elements in the linked list are stored in containers.
+The list holds the link to the first container.
+All the containers have a link to the next container in the list.
+
+Whenever you add an element to the list using add() operation, a new container is created, 
+and this container is linked to the other containers in the list.

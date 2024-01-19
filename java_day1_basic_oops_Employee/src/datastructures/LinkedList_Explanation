@@ -1,0 +1,90 @@
+
+
+
+head = null
+
+
+first time  = new-node = 10,null
+
+
+if head==null -> true
+  
+   head = newnode
+   head = 10,null
+   
+ sec time = new-node = 20
+
+if head==null -> false
+
+else
+  
+   current node = head node = 10,null
+   
+   current .next = new node
+   current    newnode
+   2000       2001
+   10,2001 -> 20,null
+     
+
+ third time = new node = 30
+ 
+ else
+  current node = head node = 
+  
+  
+  
+  
+  
+  add at beginning
+  
+  head = newnode = 10
+  
+  newnode = 20
+  
+  newnode->next = head node
+  20->10
+  
+  head = new node
+  head = 20 node
+  
+  
+  newnode = 30
+  
+  newnode next = head node
+  30 --> 20 --> 10
+  
+  head node = newnode = 30
+  
+  
+  
+  add at end
+  
+  head 
+  10
+  current node = new node =20
+  
+  10 - 20
+  
+  current node = new node = 30
+  10-20-30
+  
+  new node = 40
+  
+  10 -> 20 ->30->null
+  current node - 30 node
+  current node -> next -> new node
+  10->20->30->40->null
+  
+  new node = 50
+  10->20->30->40->50
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  

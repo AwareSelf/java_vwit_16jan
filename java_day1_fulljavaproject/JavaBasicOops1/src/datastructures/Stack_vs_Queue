@@ -1,0 +1,50 @@
+Parameter for Comparison: Stack Queue
+1) Operational principle:-
+Stack:
+Follows Last In First Out or First In Last Out principle
+Queue:
+Follows First In First Out or Last In Last Out principle
+
+
+2) Structure:-
+Stack:
+Insertion and deletion both take place from one end called as top
+Queue:
+Insertion occurs at the rear end, whereas deletion happens at the front end
+
+
+3) Number of pointers required:-
+Stack:
+It contains only one pointer known as top, which stores the reference of the topmost element
+Queue:
+It contains two pointers named front (holds the address of the first element in a list) and rear (holds the address of last queue element)
+
+4) Primary operations :-
+Stack:
+push(x) and pop() are two primary queue operations
+Queue:
+Enqueue() and Dequeue() are two primary data manipulation operations
+
+5) Condition to check empty state :-
+Stack:
+If top == -1, the stack is considered as empty
+Queue:
+If front == -1 && rear == -1, the queue is considered as empty
+
+6)Condition to check full state:-
+Stack:
+If top == MaxSize - 1, the stack is considered as full
+Queue:
+If rear == Maxsize - 1, the queue is considered as full 
+
+7) Implementation :-
+Stack:
+Easy implementation
+Queue:
+Little complex implementation
+
+8) Problem Solving :-
+Stack:
+This data structure is used to solve recursive problems.
+Queue:
+This data structure is used to solve problems that require sequential processing.

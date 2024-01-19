@@ -1,0 +1,34 @@
+
+The Necessity for a Tree in Data Structures
+Other data structures like arrays, linked-list, stacks, and queues are linear data structures, 
+and all these data structures store data in sequential order. 
+
+Time complexity increases with increasing data size to perform operations like insertion 
+and deletion on these linear data structures. But it is not acceptable for today's world 
+of computation.
+
+The non-linear structure of trees enhances the data storing, data accessing, 
+and manipulation processes by employing advanced control methods traversal through it. 
+You will learn about tree traversal in the upcoming section.
+
+But before that, understand the tree terminologies.
+
+Tree Node
+A node is a structure that contains a key or value and pointers in its child node in the 
+tree data structure.
+
+In the tree data structure, you can define the tree node as follows.
+
+struct node
+
+{
+
+ int data;
+
+ struct node *leftchild;
+
+ struct node *rightchild;
+
+}
+
+//https://www.simplilearn.com/tutorials/data-structure-tutorial/trees-in-data-structure
