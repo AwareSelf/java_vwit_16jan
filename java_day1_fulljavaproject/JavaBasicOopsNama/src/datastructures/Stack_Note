@@ -1,0 +1,29 @@
+What Is Stack?
+Stack in data structure in computer science is similar to stack as a method of arranging 
+items in the real world.
+
+Stack is a linear data structure similar to arrays and linked lists, 
+restricting the random access of elements. In arrays or linked lists, 
+you can access the items via traversal or random indexing, but the stack data 
+structure doesn't allow it either. A stack can be best understood by seeing it as a 
+container of pieces that can only be stacked on top of each other and removed from that 
+same direction only.
+
+Stack as a data structure in computer science is similar to stack as a method 
+of arranging items in the real world. A stack can be represented as a set of books 
+piled on top of each other. These books can only be placed on each other from the top end. 
+This scenario illustrates sequential book access, which is equivalent to the stack 
+data structure in computer science.
+
+Stack_Insert_and_Remove.webp  --> open in browser
+
+https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-and-queues
+
+Use of Stack:
+The stacks are used for expression evaluation
+The stacks are used for parentheses checking expressions
+Stacks are used to convert expressions from one form to another
+The stacks can be used as backtracking
+Tower of Hanoi is the best use of stacks
+Memory management and function are the application of stacks
+The stacks are also used for string reversal

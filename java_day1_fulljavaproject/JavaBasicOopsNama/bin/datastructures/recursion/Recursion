@@ -1,0 +1,21 @@
+What is Recursion? 
+The process in which a function calls itself directly or indirectly is called recursion. 
+Using a recursive algorithm, certain problems can be solved quite easily. 
+Examples of such problems are Towers of Hanoi (TOH), 
+Inorder/Preorder/Postorder Tree Traversals, 
+DFS of Graph, etc.
+
+What are Recursion Functions? 
+Recursive Functions are the corresponding functions that implement Recursion 
+(Function calling itself) within them. A recursive function solves a particular 
+problem by calling a copy of itself and solving smaller subproblems of the 
+original problems. Many more recursive calls can be generated as and when required.
+
+
+Working of Recursion
+The idea is to represent a problem in terms of one or more smaller sub-problems and 
+add base conditions that stop the recursion. 
+For example, we compute factorial n if we know the factorial of (n-1). 
+The base case for factorial would be n = 0. We return 1 when n = 0.
+
+//https://www.geeksforgeeks.org/recursion-in-java/

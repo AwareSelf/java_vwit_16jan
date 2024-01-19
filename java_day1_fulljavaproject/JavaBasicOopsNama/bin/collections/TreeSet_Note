@@ -1,0 +1,29 @@
+
+e1 = 11,Ram
+e2 =  3,Shyam
+
+
+TreeSet -> e1
+
+add e2
+
+e1.compareTo(e2) = 11-3= 8 = +ve value = e1>e2 = swap e1 and e2
+
+TreeSet -> e2, e1
+
+e3 = 14,Nita
+
+TreeSet -> e2,e1  
+
+e2.compareTo(e3) = e2.empid-e3.empid = 3-14 = -11 = e2<e3 = no swaping needed with e2
+e1.compareTo(e3) = e1.empid-e3.empid = 11-14 = -3 = e1<e3 = no swapping needed with e1
+
+add e3 in the end as it is without swapping with any ele
+
+TreeSet -> e1,e1,e3
+
+compareTo method = -ve value = no swap
+                 = +ve value = swap
+
+
+

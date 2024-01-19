@@ -1,0 +1,37 @@
+What Is the Queue?
+A queue is a linear data structure like a stack having some restrictions on insertion 
+and deletion. 
+In a queue, insertion is performed at one end, and the removal is performed at another 
+or opposite end. 
+
+A real-life illustration of a movie ticket counter can help you understand the 
+queue data structure. In a movie ticket counter, the customer who arrives first is 
+always served first. And the consumer who arrives last will undoubtedly be served last. 
+Both the ends of these queues are open and can execute different operations. 
+The rear end of the food court line inserts a customer, while the front end removes the 
+customer after providing him with the service he desires.
+
+
+Representation of Queues
+The queue in the data structure resembles all these properties of the real-world queue. 
+It follows the First in First Out principle for manipulating the data elements. 
+According to this principle, the element which gets inserted in a list at first gets 
+removed at first. The illustration given below explains the FIFO nature of a queue:
+
+Queue_Insert_and_Remove.webp  --> open in web browser
+
+Also, from the above image, it’s vividly clear that the queue data structure will 
+require two pointers for performing insertion and deletion at two distinct ends. 
+The primary operations in the queue are insertion and deletion, which are referred 
+to as Enqueue() and Dequeue(), respectively.
+
+https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-and-queues
+
+Application of Queues
+1) CPU scheduling and disk scheduling, where one resource is shared among various consumers
+2) IO Buffers, files, and Pipes IO, where data is transferred asynchronously between 
+   two processes
+3) Semaphores in the operating system
+4) FCFS (First Come First Serve) scheduling
+5) Spooling in printers
+6) Queue in routers and switches in networking
