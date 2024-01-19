@@ -5,8 +5,7 @@ junit,mockito
 spring framework
 spring boot 
 spring boot - rest services,web app,jpa - orm,microservices
-javascript
 angular
 react
-nodeexpress
-last full stack - ui -> ang/react -> backend spring boot rest service
+node
+express
