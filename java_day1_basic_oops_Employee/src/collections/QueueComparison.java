@@ -36,29 +36,7 @@ public class QueueComparison {
         
        */
     	
-    	System.out.println("priority basis of empid of Comparable of Employee:");
-    	//u r not passing comparator in PriorityQueue constructor then it will
-    	//use element's comparable interface for comparison
-    	//if comparable is not implemented and comparator is also not passed
-    	//it will give exception
-    	Queue<Employee> qemp = new PriorityQueue<Employee> ();
- 		Employee e11 = new Employee(1,"Ram",50000.0,10);
- 		Employee e21 = new Employee(4,"Rahim",80000.0,10);
- 	    Employee e3 = new Employee(2,"Nina",40000.0,20);
- 	    Employee e4 = new Employee(7,"Tina",70000.0,20);
- 	    Employee e5 = new Employee(5,"Umesh",60000.0,30);
- 	    
- 	    
- 	    qemp.offer(e11);
- 	    qemp.offer(e21);
- 	    qemp.offer(e3);
- 	    qemp.offer(e4);
- 	    qemp.offer(e5);
- 	    
- 	    while(!qemp.isEmpty())
- 	    	System.out.println(qemp.poll());
-        
-    
+    	func(null); //pass null for Comparator - it will priortize on basis of Comparable intf of element
        
         System.out.println("priority basis of empsalary");
         Comparator<Employee> cmp = (Employee e1,Employee e2)->(int)(e1.getEmpSalary() - e2.getEmpSalary());
