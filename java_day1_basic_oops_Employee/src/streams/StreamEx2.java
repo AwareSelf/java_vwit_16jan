@@ -69,15 +69,56 @@ public class StreamEx2 {
 		Set<String> empnames = lst1.stream().map((Employee e)->e.getEmpName()).collect(Collectors.toSet());
 		System.out.println(empnames);
 		
+		System.out.println("converting set into sortedset:empnames(set)-->empnamessorted(sortedset)");
+		SortedSet<String> empnamessorted = new TreeSet<String>(empnames);
+		System.out.println(empnamessorted);
+		
 
 		System.out.println("Create a group of emp names of all Employees by eliminating duplicates whose deptno is 10.. ");
 		Set<String> empnames1 = lst1.stream().filter((Employee e)->e.getDeptno()==10).map((Employee e)->e.getEmpName()).collect(Collectors.toSet());
 		System.out.println(empnames1);
 		
 		System.out.println("Create a group of emp names of all Employees by eliminating duplicates whose deptno is 10 and sal > 60000.. ");
-		empnames1 = lst1.stream().filter((Employee e)->e.getDeptno()==10 && e.getEmpSalary()>60000).map((Employee e)->e.getEmpName()).collect(Collectors.toSet());
+		empnames1 = lst1.stream().filter((e)->e.getDeptno()==10 && e.getEmpSalary()>60000).map((Employee e)->e.getEmpName()).collect(Collectors.toSet());
 		System.out.println(empnames1);
 		
+		  //using ternary operator
+		
+		 System.out.println("Find the employee with the higheest salary:");
+		 
+		  Optional<Employee> ex =  lst1.stream()
+	               .reduce((emp1,emp2)->{
+	            	   
+	            	   if(emp1.getEmpSalary()> emp2.getEmpSalary())
+	            	   {
+	            		   return emp1;
+	            	   }
+	            	   else
+	            	   {
+	            		   return emp2;
+	            	   }
+	               });   
+		  
+		  //above is same as below...using ternary operator
+	       Optional<Employee> exx =  lst1.stream()
+               .reduce((emp1,emp2)->emp1.getEmpSalary()>emp2.getEmpSalary()? emp1:emp2);            	
+             
+
+	       if(ex.isPresent())
+	    	   System.out.println("Employee with highest salary is "+ex.get());
+		
+	       //2nd way of finding employee with highest salary
+	       
+	       Comparator<Employee> c = (ae,be)->((int)(be.getEmpSalary()-ae.getEmpSalary()));
+	       Optional<Employee> opemp = lst1.stream().sorted(c).findFirst();
+	       if(opemp.isPresent())
+	    	   System.out.println("Employee with highest salary:"+opemp.get()+" and highest salasry in list is:"+opemp.get().getEmpSalary());
+	     
+	    //find total salary of all emps in list lst1
+	     System.out.println("Find total salary of all emps using stream class functions:");
+	     double tot =  lst1.stream().map((e)->e.getEmpSalary()).reduce(0.0,(a,b)->a+b);
+	     System.out.println("Total salary of all employees together:"+tot);
+	       
 		
 		
 
