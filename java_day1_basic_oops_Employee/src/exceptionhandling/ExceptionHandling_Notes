@@ -1,0 +1,44 @@
+
+java.lang.Throwable -> Error,Exception
+
+
+anything i.e. Throwable can be handled
+but you shouldnt handle java.lang.Error and its subtypes as they are
+mostly fatal errors and so there's no use handling them . (bcz u cant deal with them in first place)
+
+so u will handle java.lang.Exception and its subtypes
+
+Exception -subtypes---> RuntimeException class, remaining classes like IOException,SQLException etc
+which come under category of Non-Runtime Exceptions
+
+
+Now, RuntimeException and its subclasses like ArithmaticException,NullPointerException
+ClassCastException etc. are called as Unchecked Exceptions
+
+whereas remaining non-RuntimeExceptions like SqlException,IOException etc which extend
+from Excption but are not subclasses of RuntimeExcption --> Checked Exceptions.
+
+
+
+
+Unchecked Exceptions - RuntimeException and its subclasses --> they occur due to 
+programmer mistake in coding --> they could be detected during unit-testing when developer
+tests his code. Once he detects this exception he will go and correct his code and then
+this exception will never manifest post unit-testing,testing in entire lifetime of app run.
+So compiler does not mandate /does not give compiler error if these ecxceptions are not
+handled by the programmer.
+
+for RuntimeException compiler will not check if programmer has written exception handling
+code or not --> so they come under catgory of unchecked exceptions.
+
+but same is not the case with non-Runtime exceptions. For example IOException or SQLException
+can occur even if programmer has writter correct code. Because they depend on external resources
+which could be down or corrupeted anytime.They can't be controller through programming by the
+programmer. For example programmer cannot control if database goes down or if network goes down
+and file from that network is not available for reading.
+
+so in such cases compiler expects u to deal with such external situations by writing
+exception handling code. so compiler checks if programmer has handled these kind of 
+exceptions and gives error if not handled.
+Bcz compiler checks these exceptions are handled --> so they come under category of checked
+exceptions.
