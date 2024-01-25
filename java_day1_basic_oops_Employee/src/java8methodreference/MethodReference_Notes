@@ -1,0 +1,69 @@
+
+
+Method Reference -> reference to the method definition
+
+method reference does not invoke method, its not a function call
+method reference points to method definition i.e. method arg and body
+
+
+void func()
+{
+}
+
+func is a method reference which points to func method definition
+
+
+the way object referenc points to Object
+similary method reference points to method definition
+
+
+//Three types of method references
+1) Constructor method reference - this reference points to constructor definition
+
+    whenever u have to override any function interface with a method that returns an instance
+    you can use constructor method reference in such cases
+    
+    
+    class Fruit
+    {
+       String name;
+       Fruit(String name)
+       {
+          this.name = name;
+       }
+    }
+
+    List<String> lst = new ArrayList<String>();
+    lst.add("apple");
+    
+    List<Fruit> frt = lst.map(s->new Fruit(s)).collect(Collectors.toList());
+     List<Fruit> frt = lst.map(Fruit::new).collect(Collectors.toList());
+     
+2) Static method reference
+    
+    //(arg)->classname.staticmeth(arg)
+    //classname::staticmethodname
+    
+    //arg -> Integer.parseInt(arg)  // Integer::parseInt
+    //arg -> Math.max(arg) // Math::max
+    
+3) Instance method reference
+
+   //arg -> instaneref.instancemethod(arg)
+   // instanceref::instancemethod
+   
+   //arg -> System.out.println(arg)  //here println is instance method of out refence of PrintStream
+   //System.out::println
+                                          
+    
+
+    
+  
+    
+    
+    
+    
+  
+   
+     
+

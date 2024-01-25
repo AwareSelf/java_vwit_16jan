@@ -2,6 +2,7 @@ package streams;
 
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.stream.*;
 
 import nama.basic.java.Employee;
@@ -120,8 +121,15 @@ public class StreamEx2 {
 	     System.out.println("Total salary of all employees together:"+tot);
 	       
 		
-		
-
+	     
+          
+          
+          
+          
+                  
+          
+          
+          
 	}
 
 }
