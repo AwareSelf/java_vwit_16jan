@@ -29,7 +29,7 @@ public class ExceptionUsingTryWithResourceEx6 {
 	
 	static void func(File f) throws IOException, SQLException 
 	{
-		
+		//try-with-resource block auto-closes the resources
 		try(FileReader fr = new FileReader(f);
 			Connection con = DriverManager.getConnection("");
 			)
