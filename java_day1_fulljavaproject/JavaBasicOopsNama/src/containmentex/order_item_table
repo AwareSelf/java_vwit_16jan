@@ -1,0 +1,21 @@
+order - 
+orderid (PK), orderdate
+1, 29-1-2024 
+2, 29-1-2024
+
+item - 
+ itemid,itemname,itemprice,orderid(foreign-key reference order.orderid),itemqnty
+  1, tshirt,1000, 1(orderid),2
+  3,"Pants",2000,1(orderid),2
+  2,"Tie", ,1(orderid),
+  6,"Blazer",5000,1(orderid),1
+  4,"Raincoat",700,2(orderid),1;
+  5,"Umbrella",500,2(orderid),1;
+  
+  
+  //what this query will do
+  select i.itemid,i.itemname,i.itemprice,i.orderid
+  from order o, item i
+  where o.orderid = i.orderid
+  and o.orderid = 2
+  
