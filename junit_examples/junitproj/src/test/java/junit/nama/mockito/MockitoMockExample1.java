@@ -94,7 +94,7 @@ class MockitoMockExample1 {
 	}
 	
 	@Test
-	public void whenUseMockAnnotation_thenMockIsInjected1() {
+	public void whenUseMockAnnotationArgCapture() {
 		//by default, calling the methods of mock object will do nothing
 	    //so size of list is still 0
 	  
@@ -110,9 +110,40 @@ class MockitoMockExample1 {
 	    
 	    assertEquals(20,argCaptor.getValue(),"Test fail:setOp2 arg should have been 20");
 	
-	  	    
+	    
+	    /*
+	      need to stub mock add method as for mock, add meth will return 0.0
+	     */    
 	    Mockito.when(calci.add()).thenReturn(35.0);
 	    assertEquals(35.0,calci.add());
+	    
+	       
+	    
+	}
+	
+	@Test
+	public void whenUseSpyAnnotationArgCapture() {
+		//by default, calling the methods of mock object will do nothing
+	    //so size of list is still 0
+	  
+		calci1.setOp1(15);
+		
+	    Mockito.verify(calci1).setOp1(argCaptor.capture());
+	    
+	    assertEquals(15,argCaptor.getValue(),"Test fail:setOp1 arg should have been 15");
+	  
+	    calci1.setOp2(20);
+	    
+        Mockito.verify(calci1).setOp2(argCaptor.capture());
+	    
+	    assertEquals(20,argCaptor.getValue(),"Test fail:setOp2 arg should have been 20");
+	
+	  	 
+	    /*
+	      no need to stub spy add method as original add method will 
+	      add the two values that are set in op1 and op2 and
+	      give expected result */
+	    assertEquals(35.0,calci1.add());
 	    
 	       
 	    
