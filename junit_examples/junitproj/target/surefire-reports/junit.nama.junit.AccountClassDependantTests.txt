@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: junit.nama.junit.AccountClassDependantTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.579 s <<< FAILURE! - in junit.nama.junit.AccountClassDependantTests
+testWithdraw  Time elapsed: 0.531 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: withdraw of Account not working as expected ==> expected: <500.0> but was: <0.0>
+	at junit.nama.junit.AccountClassDependantTests.testWithdraw(AccountClassDependantTests.java:45)
+
+testDeposit  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: deposit of Account not working as expected ==> expected: <2000.0> but was: <1500.0>
+	at junit.nama.junit.AccountClassDependantTests.testDeposit(AccountClassDependantTests.java:66)
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: junit.nama.junit.AssertThrowsTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in junit.nama.junit.AssertThrowsTest
+testAdd_ZeroOperands_NonEmptyArgument  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at junit.nama.junit.AssertThrowsTest.testAdd_ZeroOperands_NonEmptyArgument(AssertThrowsTest.java:35)
+

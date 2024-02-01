@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: junit.nama.junit.AccountClassParameterizedTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! - in junit.nama.junit.AccountClassParameterizedTest
+testWithdraw4{double, double, double}  Time elapsed: 0.001 s  <<< ERROR!
+org.junit.platform.commons.PreconditionViolationException: Classpath resource [data.csv] does not exist
+

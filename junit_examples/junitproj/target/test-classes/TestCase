@@ -1,0 +1,37 @@
+
+TDD - Test Driven Testing
+
+before u write ur code
+user story = requirement doc
+write calculator class to 
+Take two operands from end user and do math operations add,multiply,sub,divide,remainder.
+
+design/algorithm:
+i/p 
+double op1,op2
+add func - public, return double type, body - return addn op1 and op2
+sub func - public, return double, body - sub op2 from op1
+
+Tescase doc:
+1 to test add func
+
+
+unittest
+
+
+code
+add func 
+sub func
+
+
+
+
+ tescase doc
+ srno| unit function | condition | input | expected output | test result
+ 1    | withdraw | amt <= bal  | bal=2000,amt=1500 | bal=500 | pass
+ 2    | withdraw | amt <= bal | bal=2000,amt=2000 | bal=0 | pass
+ 3    | withdraw | amt <= bal  | bal=2000,amt=3000 |InsufficientBalance exception shuld thrown| pass
+ 4    | deposit  | amt >=0     | bal=2000,amt= -3000 | amt >=0  | pass
+ 5    | deposit  | bal = bal+amt  | bal=2000,amt=1500 | bal=3500 |pass
+ 
+ 
