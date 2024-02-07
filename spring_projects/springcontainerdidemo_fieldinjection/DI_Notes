@@ -1,0 +1,23 @@
+In this tutorial, we will learn how to use constructor-based dependency injection in the Spring boot application.
+
+Dependency Injection is a design pattern on which dependency of the object is injected by the framework rather than created by the Object itself - It is also called IOC (Inversion of Control).
+
+Dependency Injection reduces coupling between multiple objects as its dynamically injected by the framework. Spring IoC Container uses DI to inject one object into another object. 
+
+There are mainly three types of Dependency Injection: 
+
+Constructor Injection
+Setter Injection
+Field Injection
+In this tutorial, we will see step by step how to use constructor-based dependency injection in the Spring boot application.
+
+https://www.javaguides.net/2023/01/spring-boot-constructor-injection.html
+
+@Qualifier annotation is used in conjunction with Autowired to avoid confusion 
+when we have two or more beans configured for the same type.
+
+@Configuration: Used to indicate that a configuration class declares one or more @Bean methods. These classes are processed by the Spring container to generate bean definitions and service requests for those beans at runtime.
+
+@ComponentScan: This annotation is used to specify the base packages to scan for spring beans/components.
+
+Spring @Autowired annotation is used for the automatic injection of beans.

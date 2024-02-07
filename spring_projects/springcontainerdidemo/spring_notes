@@ -1,0 +1,12 @@
+https://www.javaguides.net/2018/10/spring-boot-annotations.html
+spring framework:
+
+spring container
+  1) BeanFactory container - BeanFactory interface - basic/primitive spring container
+  2) ApplicationContext container,ConfigurableApplicationContext container - 
+  
+      ApplicationContext interface - advance spring container -  used by non spring boot application
+      ConfigurableApplicationContext interface - advance spring container - used by spring boot application
+  
+  
+  ApplicationContext.ConfigurableApplicationContext interface extends from BeanFactory interface

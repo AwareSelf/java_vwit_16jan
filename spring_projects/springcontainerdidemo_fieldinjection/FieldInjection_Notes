@@ -1,0 +1,11 @@
+Field injection introduces a dependency of the Spring container, 
+as the @Autowired annotation is a Spring component; thus, the bean is no longer 
+a POJO and cannot be instantiated independently.
+
+Field injection cannot be used for final fields. 
+This type of field can only be initialized using constructor injection.
+
+Field injection introduces difficulties when writing tests as the dependencies 
+have to be injected manually.
+
+https://www.javaguides.net/2019/11/spring-field-injection-example-and-its-drawbacks.html
